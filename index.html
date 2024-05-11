@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Hello, I'm Akshat Thakur</h1>
-        <p>Welcome to my portfolio website. Here you can find links to my projects, blog posts, and more about my professional work.</p>
+        <div class="vertical_split">
+            <div class ="header_info">
+                <h1 style="color: white;"> Hello, I'm Akshat Thakur</h1>
+                <p>Welcome to my portfolio website. Here you can find links to my projects, blog posts, and more about my professional work.</p>
+            </div>
+            
+            <div class = "icon_bar" style="display: flex; flex-direction:row;">
+                <a href="https://github.com/AkshatDev">
+                <img style="border-radius: 50%;" src="images/github.ico"  alt="GitHub"></a>
+                <a href="mailto:akshat.thakur8@gmail.com">
+                <img style="border-radius: 50%;" src="images/gmail.ico" alt="Gmail"> </a>
+                <a href="https://www.linkedin.com/in/akshat-thakur-aa519ba9/">
+                <img style="border-radius: 50%;" src="images/linkedin.ico" alt="LinkedIn"></a>
+                <a href="https://medium.com/@akshat-thakur8">
+                <img style="border-radius: 50%;" src="images/medium.ico" alt="Medium"></a>
+            </div>
+        </div>
+    
     </header>
+    
+    
+    <section id="about_me", class="profile-section">
+        <div class ="bio">
+        <h2>About Me</h2>
+        <p>Hi, I'm Akshat Thakur, a data science aficionado and avid blogger based in Toronto. With a foundation in computer science and advanced studies in artificial intelligence, I specialize in unraveling the complexities of data through predictive modeling, machine learning, and statistical analysis.</p>
+        </div>
+        <div class="profile-picture">
+            <img src="images/profile_picture.jpeg" alt="Akshat Thakur">
+        </div>
+    </section>
+
     <section>
-        <h2>Featured Articles</h2>
+        <h2>Projects, Research Papers</h2>
         <ul>
             <li><a href="https://medium.com/@akshat.thakur8/logistic-regression-3-interpretations-same-result-6ddf281161e5?source=friends_link&sk=d6f500615fa2e5f09231fc4070b80904">Logistic Regression – 3 Interpretations</a></li>
             <li><a href="https://medium.com/@akshat.thakur8/episode-2-implementing-logistic-regression-from-scratch-da73c7a0f2e?source=friends_link&sk=40e23dc7e21ee2e31151434d56c014aa">Logistic Regression from scratch</a></li>
@@ -23,3 +50,4 @@
     </section>
 </body>
 </html>
+
