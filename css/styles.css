@@ -1,6 +1,10 @@
 html {
     font-size: 16px;
     box-sizing: border-box;
+    font-family: serif;
+
+    color: black;
+
 }
 body {
     font-family: Arial, sans-serif;
@@ -24,27 +28,6 @@ h1, h2 {
     color: #ffffff;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color:  #0077cc;
-    font-weight: bold;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-section#about_me {
-    font-family: Arial;
-    font-style: oblique;
-    color: #000;
-    font-size: medium;
-}
 
 section {
     margin: 20px;
@@ -90,8 +73,7 @@ section {
 .icon_bar img {
     width: 50px; /* Smaller size for icons */
     height: 50px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Makes images round */
-    margin-left: 10px; /* Space between icons */
+    margin-left: 15px; /* Space between icons */
 }
 .header_info {
 flex-grow: calc(1 - 0.3); /* Takes up remaining space */
@@ -145,8 +127,9 @@ flex-grow: calc(1 - 0.3); /* Takes up remaining space */
 
 .timeline-content, .timeline-date {
     padding: 10px;
+    padding-left: 1%;
     border-radius: 8px; /* Rounded corners for timeline entries */
-    background-color: #a6f3fd;
+    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadows for content blocks */
 }
 
