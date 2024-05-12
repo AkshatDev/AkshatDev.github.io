@@ -7,19 +7,21 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #333333;
+    background-color: #3d5a80;
 }
 
 header {
-    background: #0a0a0a;
-    color: #fff;
-    padding: 20px;
+    background: #b3c9d6;
+    padding: 30px;
+    margin: 20px;
     text-align: center;
+    border-radius: 10px; /* Rounded corners for the header too */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow effect */
 }
 
 h1, h2 {
-    color: #333;
+    color: #ffffff;
 }
 
 ul {
@@ -29,7 +31,7 @@ ul {
 
 ul li a {
     text-decoration: none;
-    color: #0066cc;
+    color:  #0077cc;
     font-weight: bold;
 }
 
@@ -46,8 +48,11 @@ section#about_me {
 
 section {
     margin: 20px;
-    padding: 20px;
-    background: #fff;
+    padding: 30px;
+    background: #b3c9d6;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    color: rgb(61, 61, 61);
 }
 
 .profile-section {
@@ -55,6 +60,7 @@ section {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    
 }
 .bio {
     flex: 3; /* Takes up 3 parts of the space */
@@ -89,3 +95,87 @@ section {
 .header_info {
 flex-grow: calc(1 - 0.3); /* Takes up remaining space */
 }
+
+
+
+
+#work_experience {
+    position: relative;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #0063c5 0%, #00bfff 50%, #29abff 100%); /* Updated Gradient */
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    z-index: 1;
+    border-radius: 2px; /* Rounded caps */
+    animation: glow 8s infinite ease-in-out;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 8px #006699; /* Subtle blue glow */
+    }
+    50% {
+        box-shadow: 0 0 25px #00bfff; /* Brighter blue glow */
+    }
+}
+
+
+
+.timeline-item {
+    display: flex;
+    position: relative;
+    margin: 20px 0;
+}
+
+.timeline-content, .timeline-date {
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for timeline entries */
+    background-color: #e0fbfc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadows for content blocks */
+}
+
+.timeline-content.left, .timeline-date.right {
+    float: left;
+    clear: both;
+    width: 40%; /* Adjust based on your content */
+    height: 100%;
+    margin-right: 10px;
+}
+
+.timeline-content.right, .timeline-date.left {
+    float: right;
+    clear: both;
+    width: 40%; /* Adjust based on your content */
+    height: 100%;
+    margin-left: 10px;
+}
+
+/* Alternate alignment for items */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    margin-right: auto;
+}
+
+
+
+ul.a {
+    list-style-type: circle;
+  }
