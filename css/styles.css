@@ -8,11 +8,11 @@ body {
     margin: 0;
     padding: 0;
     color: #333333;
-    background-color: #3d5a80;
+    background: radial-gradient(621px at 25.3% 13.8%, rgb(255, 255, 255) 0%, rgb(234, 236, 255) 90%);
 }
 
 header {
-    background: #b3c9d6;
+    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
     padding: 30px;
     margin: 20px;
     text-align: center;
@@ -49,7 +49,8 @@ section#about_me {
 section {
     margin: 20px;
     padding: 30px;
-    background: #b3c9d6;
+  
+    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
     border-radius: 10px; /* Adds rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     color: rgb(61, 61, 61);
@@ -145,7 +146,7 @@ flex-grow: calc(1 - 0.3); /* Takes up remaining space */
 .timeline-content, .timeline-date {
     padding: 10px;
     border-radius: 8px; /* Rounded corners for timeline entries */
-    background-color: #e0fbfc;
+    background-color: #a6f3fd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadows for content blocks */
 }
 
