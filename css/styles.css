@@ -1,31 +1,30 @@
 html {
-    font-size: 15px;
+    font-size: 20px;
     color: black;
 
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: MV Boli;
     font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333333;
-    background: radial-gradient(621px at 25.3% 13.8%, rgb(255, 255, 255) 0%, rgb(234, 236, 255) 90%);
+    line-height: 1.6;    
+    background-image: url("../images/background.jpg");
+    
 }
 
 h1, h2 {
-    color: black;
+    color: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);;
 }
 
-
-
+a {
+    color: black;
+    text-decoration: underline;
+}
 section {
     margin: 20px;
     padding: 30px;
     background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
     border-radius: 10px; /* Adds rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    color: rgb(61, 61, 61);
 }
 
 .my_info {
@@ -60,11 +59,11 @@ section {
 }
 
 .about_me {
-    flex:65%;
+    flex:85%;
     justify-content: space-between;
 }
 .profile_picture {
-    flex:35%;
+    flex:15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,8 +72,6 @@ section {
 
 .profile_picture img {  /* Targeting all img elements within .images */
     border-radius: 50%;  /* This will make all images circular */
-    width: 75%; /* This will make the images fill the container */
-    height: 75%; /* This will make the images fill the container */
 }
 
 
