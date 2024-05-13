@@ -3,34 +3,34 @@
 <head>
     <title>Welcome to My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
- 
-    <section id="about_me", class="flex_horizontal">
-        
-        
-        <div class="vertical_split">
-            <div class ="header_info">
-                <h1 > Hello, I'm Akshat Thakur</h1>
-                <p>Welcome to my portfolio website. Here you can find links to my projects, blog posts, and more about my professional work.</p>
-            </div>
-            
-            <div class = "icon_bar" style="display: flex; flex-direction:row;">
-                <a href="https://github.com/AkshatDev"><img  src="images/github.png"  alt="GitHub"></a>
-                <a href="mailto:akshat.thakur8@gmail.com"><img src="images/gmail.png" alt="Gmail"> </a>
-                <a href="https://www.linkedin.com/in/akshat-thakur-aa519ba9/"><img  src="images/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://medium.com/@akshat-thakur8"><img src="images/medium.png" alt="Medium"></a>
-            </div>
+
+    <div class="flex_row">
+        <div class="welcome_text">
+            <h1>Welcome to My Portfolio</h1>
         </div>
-        <div class = "vertical_split">
-        <div class ="bio">
-        <h1>About Me</h1>
-        <p>Hi, I'm Akshat Thakur, a data science aficionado and avid blogger based in Toronto. With a foundation in computer science and advanced studies in artificial intelligence, I specialize in unraveling the complexities of data through predictive modeling, machine learning, and statistical analysis.</p>
-        </div>
-        <div class="profile-picture">
-            <img src="images/profile_picture.jpeg" alt="Akshat Thakur">
+        <div class = "social_media_icons ">
+            <a href="https://github.com/AkshatDev"><img  src="images/github.png"  alt="GitHub"></a>
+            <a href="mailto:akshat.thakur8@gmail.com"><img src="images/gmail.png" alt="Gmail"> </a>
+            <a href="https://www.linkedin.com/in/akshat-thakur-aa519ba9/"><img  src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://medium.com/@akshat-thakur8"><img src="images/medium.png" alt="Medium"></a>
+    
         </div>
     </div>
+ 
+    <section  class = "my_info flex_row">
+        <div class="about_me">
+            <p><h1>About Me</h1>
+                Hi, I'm Akshat Thakur, a data science aficionado and avid blogger based in Toronto. With a foundation in computer science and advanced studies in artificial intelligence, I specialize in unraveling the complexities of data through predictive modeling, machine learning, and statistical analysis. My passion for data science is matched by my enthusiasm for embedded programming, where I design and optimize software solutions to enhance device interaction and operational efficiency.
+                    Through my blogs on Medium, I dive deep into topics like logistic regression, neural networks, and decision trees, aiming to bridge the gap between theoretical data science concepts and their practical applications. My writing serves as a platform to share insights and foster a community of learners, helping others navigate the intricate world of data science and embedded systems.
+                    Join me in exploring the transformative power of data and technology, where every piece of code tells a story and every dataset offers a new discovery. Let’s decode the future together and make the complex understandable.</p>
+        </div>
+            <div class = "profile_picture">
+                <img src="images/profile_picture.jpeg" alt="Akshat Thakur">
+            </div>
+
     </section>
 
     <section id="work_experience">
@@ -39,7 +39,7 @@
             <div class="timeline-item">
                 <div class="timeline-content left">
                     <h2>Software Engineer</h3>
-                    <p><ul.a>
+                    <p><ul>
                         <li>Developed and maintained a PySide6 application for BOTDA hardware control,
                         improving operational efficiency and reliability.</li>
                         <li>Modularized the application into microservices using Kafka to enhance scalability
@@ -77,7 +77,7 @@
                 </div>
                 <div class="timeline-content right">
                     <h2>Lead Programming Instructor</h2>
-                    <p><ul.a>
+                    <p><ul>
                         <li>Led a comprehensive Computer Coding and Robotics program for students
                             ranging from Senior Kindergarten to Grade 12.</li>
                         <li>Taught a variety of programming languages including Scratch for beginners,
@@ -94,16 +94,15 @@
                             engagement and retention of complex concepts.</li>
                         <li>Acted as a mentor, providing guidance and support to students, inspiring them to
                             pursue further education and careers in technology.</li>
-                    </ul.a></p>
+                    </ul></p>
                 </div>
             </div>
-            <!-- Add more timeline-item divs here for additional experiences -->
         </div>
     </section>
     
     <section>
         <h1>Projects, Research Papers</h1>
-        <ul>
+        <ul >
             <li><a href="https://medium.com/@akshat.thakur8/logistic-regression-3-interpretations-same-result-6ddf281161e5?source=friends_link&sk=d6f500615fa2e5f09231fc4070b80904">Logistic Regression – 3 Interpretations</a></li>
             <li><a href="https://medium.com/@akshat.thakur8/episode-2-implementing-logistic-regression-from-scratch-da73c7a0f2e?source=friends_link&sk=40e23dc7e21ee2e31151434d56c014aa">Logistic Regression from scratch</a></li>
             <li><a href="https://medium.com/@akshat.thakur8/episode-3-implementing-a-neural-network-from-scratch-9e267536e66c">From LR to Neural Networks from scratch</a></li>
@@ -114,4 +113,5 @@
     </section>
 </body>
 </html>
+
 

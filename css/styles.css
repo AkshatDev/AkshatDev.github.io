@@ -1,95 +1,86 @@
 html {
-    font-size: 16px;
-    box-sizing: border-box;
-    font-family: serif;
-
+    font-size: 20px;
     color: black;
 
 }
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333333;
-    background: radial-gradient(621px at 25.3% 13.8%, rgb(255, 255, 255) 0%, rgb(234, 236, 255) 90%);
-}
-
-header {
-    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
-    padding: 30px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px; /* Rounded corners for the header too */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow effect */
-}
-
-h1, h2 {
-    color: #ffffff;
-}
-
-
-section {
-    margin: 20px;
-    padding: 30px;
-  
-    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    color: rgb(61, 61, 61);
-}
-
-.profile-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    flex: 1; /* Takes up 1 part of the space */
+    font-family: MV Boli;
+    font-size: 1rem;
+    line-height: 1.6;    
+    background-image: url("../images/background.jpg");
     
 }
 
-.flex_horizontal {
+h1, h2 {
+    color: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+section {
+    margin: 20px;
+    padding: 30px;
+    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.my_info {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;   
+}
+
+.flex_column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    flex: 1;
-}
-.bio {
-    flex: 3; /* Takes up 3 parts of the space */
+       
 }
 
-.profile-picture {
-    flex: 1; /* Takes up 1 part of the space */
+.welcome_text {
+    flex: 0 0 80%;  
 }
-.profile-picture img {
-    width: 200px;  /* Fixed width for larger screens */
-    height: 200px; /* Fixed height to maintain aspect ratio */
-    border-radius: 50%; /* Makes the image round */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
-    object-fit: cover; /* Ensures the image covers the area without distorting */
-    max-width: 100%; /* Ensures the image is not bigger than its container */
-    float: right;
-}
-.vertical_split {
+.social_media_icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-  
+    width: 25%;
     height: 100%;
+    flex:0 0 20%;
+    justify-content: right;
+    align-items: right;
+    
 }
 
-.icon_bar img {
-    width: 50px; /* Smaller size for icons */
-    height: 50px; /* Maintain aspect ratio */
-    margin-left: 15px; /* Space between icons */
+.about_me {
+    flex:85%;
+    justify-content: space-between;
 }
-.header_info {
-flex-grow: calc(1 - 0.3); /* Takes up remaining space */
+.profile_picture {
+    flex:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile_picture img {  /* Targeting all img elements within .images */
+    border-radius: 50%;  /* This will make all images circular */
 }
 
 
-
+.social_media_icons img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  
+}
 
 #work_experience {
     position: relative;
@@ -166,9 +157,3 @@ flex-grow: calc(1 - 0.3); /* Takes up remaining space */
 .timeline-item:nth-child(even) .timeline-date {
     margin-right: auto;
 }
-
-
-
-ul.a {
-    list-style-type: circle;
-  }
