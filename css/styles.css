@@ -4,14 +4,12 @@ html {
     
     font-size: 20px;
     color: black;
-
 }
 body {
 
     font-size: 1rem;
     line-height: 1.6;
     background: radial-gradient(905px at 4.9% 85.8%, rgb(255, 243, 242) 0.1%, rgb(255, 247, 220) 57.6%);    
-    /*background-image: url("../images/background.jpg");*/
     
 }
 
@@ -26,9 +24,10 @@ a {
 section {
     margin: 20px;
     padding: 30px;
-    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
+    /*background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);*/
     border-radius: 10px; /* Adds rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    background:#f5f5dc;
 }
 
 .my_info {
@@ -46,6 +45,12 @@ section {
     display: flex;
     flex-direction: column;
        
+}
+
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .welcome_text {
@@ -133,7 +138,6 @@ section {
     padding: 10px;
     padding-left: 1%;
     border-radius: 8px; /* Rounded corners for timeline entries */
-    background: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.46) 0%, rgba(91, 224, 254, 0.46) 47.2%, rgba(170, 254, 235, 0.43) 90%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadows for content blocks */
 }
 
@@ -160,4 +164,54 @@ section {
 
 .timeline-item:nth-child(even) .timeline-date {
     margin-right: auto;
+}
+
+.card {
+    width: calc(40% - 5px); /* Set width of cards */
+    margin-right: 10px; /* Right margin for spacing between cards */
+    margin-bottom: 10px; /* Bottom margin for spacing between rows */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    transform: skewX(-30deg);
+    animation: slide 1.5s linear infinite;
+    pointer-events: none;  /* Allows clicks to pass through to underlying elements */
+
+}
+
+@keyframes slide {
+    0% {
+        left: 0px;  
+    }
+    100% {
+        left: 100%; 
+    }
+}
+
+.project_image {
+    flex:1;
+}
+.project_image img {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_description {
+    flex: 1;
 }
