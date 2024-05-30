@@ -189,13 +189,29 @@ section {
     border-radius: 5px;
     transform: skewX(-30deg);
     animation: slide 1.5s linear infinite;
+    pointer-events: none;  /* Allows clicks to pass through to underlying elements */
+
 }
 
 @keyframes slide {
     0% {
-        left: 0px;  /* Start at the left edge of the card */
+        left: 0px;  
     }
     100% {
-        left: 100%; /* Move to the right edge of the card */
+        left: 100%; 
     }
+}
+
+.project_image {
+    flex:1;
+}
+.project_image img {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_description {
+    flex: 1;
 }
